@@ -4,8 +4,8 @@ import sys
 import multiprocessing
 
 MAX_CORES = multiprocessing.cpu_count()
-BENCHMARKS_DIR = '<DIRECTORY TO benchmarks/ GOES HERE>'
-SIMPLESIM_DIR = '<DIRECTORY to simplesim-3.0/ GOES HERE>'
+BENCHMARKS_DIR = '/mnt/raid0_24TB/rimon/classes/csci6461/benchmarks/'
+SIMPLESIM_DIR = '/mnt/raid0_24TB/rimon/classes/csci6461/simplesim-3.0/'
 
 def run_cmd_no_out(cmd):
     assert(subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode == 0)
